@@ -1,0 +1,141 @@
+.header {
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 3vh 0;
+}
+
+#addTodo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw;
+    width: 30vw;
+    min-height: 15vh;
+    margin: auto;
+    margin-bottom: 10vh;
+    border-radius: 1vw;
+    background-color: rgb(218, 183, 252);
+}
+
+#addTodo_container input {
+    font-size: 1.5vw;
+    outline: none;
+    border: 0.18vw solid rgb(21, 0, 78);
+    border-radius: 0.5vw;
+    padding: 0.5vw 1vw;
+    width: 25vw;
+    margin-bottom: 1.5vw;
+}
+
+#addTodo_container button {
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    min-width: 13vw;
+    outline: none;
+    border: 0.15vw solid rgb(0, 0, 85);
+    border-radius: 0.5vw;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 56);
+}
+
+#addTodo_container button:hover {
+    background-color: rgb(0, 0, 83);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    .header {
+        font-size: 6vw;
+    }
+
+    #addTodo_container {
+        padding: 5vw;
+        width: 50vw;
+        min-height: 10vh;
+        margin-bottom: 6vh;
+        border-radius: 3vw;
+        background-color: rgb(218, 183, 252);
+    }
+
+    #addTodo_container input {
+        font-size: 3.5vw;
+        border: 0.15vw solid rgb(21, 0, 78);
+        border-radius: 1.5vw;
+        padding: 1vw 2vw;
+        width: 40vw;
+        margin-bottom: 2vw;
+    }
+    
+    #addTodo_container button {
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        min-width: 20vw;
+        border-radius: 1.5vw;;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .header {
+        font-size: 6vw;
+    }
+
+    #addTodo_container {
+        padding: 5vw;
+        width: 50vw;
+        min-height: 10vh;
+        margin-bottom: 6vh;
+        border-radius: 3vw;
+    }
+
+    #addTodo_container input {
+        font-size: 3.5vw;
+        border: 0.15vw solid rgb(21, 0, 78);
+        border-radius: 1.5vw;
+        padding: 1vw 2vw;
+        width: 40vw;
+        margin-bottom: 2vw;
+    }
+    
+    #addTodo_container button {
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        min-width: 20vw;
+        border-radius: 1.5vw;;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .header {
+        font-size: 4vw;
+    }
+
+    #addTodo_container {
+        padding: 4vw;
+        width: 45vw;
+        min-height: 20vh;
+        margin-bottom: 8vh;
+        border-radius: 2vw;
+    }
+
+    #addTodo_container input {
+        font-size: 2.5vw;
+        border: 0.15vw solid rgb(21, 0, 78);
+        border-radius: 1vw;
+        padding: 1vw 2vw;
+        width: 40vw;
+        margin-bottom: 2vw;
+    }
+    
+    #addTodo_container button {
+        font-size: 2.5vw;
+        padding: 1vw 2vw;
+        min-width: 20vw;
+        border-radius: 1vw;;
+    }
+}

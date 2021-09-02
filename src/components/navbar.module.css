@@ -1,0 +1,220 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 13vh;
+    padding: 2vw 0;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+#navbar #logo h1 {
+    font-size: 2.2vw;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+
+#navbar #logo h1:hover {
+    color: rgb(54, 238, 54);
+    text-shadow: 0.07vw 0.07vw 0.2vw yellow;
+}
+
+#navbar #logo #toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.4vw;
+    background-color:white;
+    border-radius: 0.5vw;
+}
+
+#navbar #logo #toggle span {
+    width: 1.8vw;
+    min-height: 0.4vw;
+    background-color: black;
+    margin: 0.1vw 0;
+    border-radius: 0.5vw;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+    /* background-color: pink; */
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 0 1vw;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+    padding: 0.3vw 1vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.8vw;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    text-shadow: 0.07vw 0.07vw 0.2vw yellow;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 3vw;
+        width: 100%;
+        margin-right: 0vw;
+        border-top: 0.2vw solid white;
+        /* background-color: rgb(245, 216, 216); */
+    }
+
+    #navbar ul li {
+        margin-top: 2vw;
+        padding: 0.5vw 2vw;
+    }
+    
+    #navbar ul li a {
+        font-size: 4vw;
+        border-radius: 2vw;
+        padding: 1vw 2vw;
+    }
+
+    #navbar #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbar #logo h1 {
+        font-size: 6vw;
+    }
+
+    #navbar #logo h1:hover {
+        text-shadow: 0.2vw 0.2vw 0.4vw yellow;
+    }
+
+    #navbar #logo #toggle {
+        display: flex;
+        margin-left: 10vw;
+        padding: 0.8vw;
+        border-radius: 1.5vw;
+    }
+    
+    #navbar #logo #toggle span {
+        width: 7vw;
+        min-height: 1.3vw;
+        margin: 0.5vw 0;
+        border-radius: 1.5vw;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 3vw;
+        width: 100%;
+        margin-right: 0vw;
+        border-top: 0.2vw solid white;
+        /* background-color: rgb(245, 216, 216); */
+    }
+
+    #navbar ul li {
+        margin-top: 2vw;
+        padding: 0.5vw 2vw;
+    }
+    
+    #navbar ul li a {
+        font-size: 4vw;
+        border-radius: 2vw;
+        padding: 1vw 2vw;
+    }
+
+    #navbar #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbar #logo h1 {
+        font-size: 5vw;
+    }
+
+    #navbar #logo h1:hover {
+        text-shadow: 0.2vw 0.2vw 0.4vw yellow;
+    }
+
+    #navbar #logo #toggle {
+        display: flex;
+        margin-left: 10vw;
+        padding: 0.8vw;
+        border-radius: 1.5vw;
+    }
+    
+    #navbar #logo #toggle span {
+        width: 6vw;
+        min-height: 1.1vw;
+        margin: 0.4vw 0;
+        border-radius: 1.5vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #navbar #logo h1 {
+        font-size: 4vw;
+        margin-left: 3vw;
+        cursor: pointer;
+    }
+
+    #navbar ul li a {
+        font-size: 2.5vw;
+        border-radius: 1vw;
+        padding: 0.5vw 1vw;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    #navbar #logo h1 {
+        font-size: 3vw;
+        margin-left: 3vw;
+        cursor: pointer;
+    }
+
+    #navbar ul li a {
+        font-size: 2vw;
+        border-radius: 1vw;
+        padding: 0.5vw 1vw;
+    }
+}

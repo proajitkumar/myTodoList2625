@@ -1,0 +1,48 @@
+#footer {
+    position: relative;
+    top: 30vh;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+#footer p {
+    font-size: 1.7vw;
+}
+
+@media only screen and (max-width: 480px) {
+
+    #footer {
+        top: 44vh;
+        /* min-height: 8vh; */
+    }
+
+    #footer p {
+        font-size: 3.6vw;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    #footer {
+        top: 40vh;
+    }
+
+    #footer p {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #footer {
+        min-height: 17vh;
+    }
+
+    #footer p {
+        font-size: 2vw;
+    }
+}

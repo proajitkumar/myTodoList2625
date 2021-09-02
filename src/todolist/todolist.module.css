@@ -1,0 +1,30 @@
+#todoList h1 {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+#todoList #noTodo {
+    text-align: center;
+    font-weight: 500;
+    color: rgb(100, 99, 99);
+}
+
+/* Media Queries  */
+
+@media only screen and (max-width: 480px) {
+    #todoList h1 {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #todoList h1 {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #todoList h1 {
+        font-size: 4vw;
+    }
+}
