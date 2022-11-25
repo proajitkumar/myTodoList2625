@@ -16,6 +16,7 @@ function App() {
   }
   else {
     initTodo = JSON.parse(localStorage.getItem("todos"));
+    console.log({initTodo })
   }
 
   // const defaultItems = [
@@ -53,6 +54,17 @@ function App() {
   const onDelete = (todo)=> {
     setTodos(todos.filter((e)=> {return e!==todo}))
   }
+  
+  const onEdit = (todo, index)=> {
+    let newList = todos
+    newList[index] = todo
+    setTodos([...newList])
+  }
+
+  const onDeleteAll = ()=> {
+    setTodos([])
+  }
+  
 
   useEffect(() => {
     localStorage.setItem("todos",JSON.stringify(todos))
@@ -66,7 +78,7 @@ function App() {
 
         <Route exact path='/'>
           <AddTodo addTodo={addTodo} />
-          <Todolist todos={todos} onDelete={onDelete} />
+          <Todolist todos={todos} onDelete={onDelete} onDeleteAll={onDeleteAll} onEdit={onEdit}/>
         </Route>
 
         <Route exact path='/contact'>

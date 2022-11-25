@@ -9,6 +9,20 @@
     color: rgb(100, 99, 99);
 }
 
+.deleteAll{
+    font-size: 1.5vw;
+    padding: 0.2vw 0.5vw;
+    outline: none;
+    border: 0.15vw solid rgb(56, 0, 0);
+    border-radius: 0.5vw;
+    background-color: rgb(172, 2, 2);
+    color: white;
+    cursor: pointer;
+    margin: 10px auto auto;
+    display: block;
+    width: 30vw;
+}
+
 /* Media Queries  */
 
 @media only screen and (max-width: 480px) {
