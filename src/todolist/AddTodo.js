@@ -11,12 +11,13 @@ const AddTodo = ({ addTodo }) => {
     }
 
     const submitHandler = (event) => {
-        event.preventDefault();
-        if (!title) {
+        event?.preventDefault();
+        let trimmedTitle = title?.trim()
+        if (!trimmedTitle) {
             alert("Title cannot be blank!")
         }
         else {
-            addTodo(title);
+            addTodo(trimmedTitle);
             setTitle("");
         }
     }

@@ -26,8 +26,9 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     resize: none;
-    min-height: 32px;
+    min-height: 35px;
     overflow:auto;
+    overflow-x: hidden;
 }
 .todoItem input:disabled, .todoItem textarea:disabled {
     overflow:hidden;

@@ -28,14 +28,15 @@ const TodoItem = ({ todo, onDelete, onEdit }) => {
 
     const submitHandler = (event) => {
         event?.preventDefault();
-        if (!title) {
+        let trimmedTitle = title?.trim()
+        if (!trimmedTitle) {
             alert("Title cannot be blank!")
         }
         else {
             // addTodo(title);
-            onEdit({...todo, title: title})
+            onEdit({...todo, title: trimmedTitle})
             setEditing(false)
-            setTitle(title)
+            setTitle(trimmedTitle)
         }
     }
 
